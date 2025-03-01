@@ -1,0 +1,9 @@
+@model List<Order>
+
+    <h2>Order History</h2>
+    <ul>
+        @foreach (var order in Model)
+    {
+        <li>Order ID: @order.Id - Date: @order.OrderDate</li>
+    }
+    </ul>

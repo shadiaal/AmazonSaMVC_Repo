@@ -1,0 +1,23 @@
+@model List<AmazonSaMVC.Models.Product>
+
+    <div class="container mt-4">
+        <h2 class="text-center mb-4">Product List</h2>
+        <div class="row">
+            @foreach (var product in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="~/images/@(product.ImageUrl)" class="card-img-top img-fluid rounded-top" style="width: 100%; height: 200px; object-fit: contain;" alt="@product.Name">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">@product.Name</h5>
+                        <p class="card-text text-muted">@product.Description</p>
+                        <h6 class="text-primary">@product.Price SAR</h6>
+                        <a href="@Url.Action("Create", "Order", new { productId = product.Id })" class="btn btn-primary w-100">Order Now</a>
+
+                    </div>
+                </div>
+            </div>
+        }
+        </div>
+    </div>

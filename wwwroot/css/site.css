@@ -1,0 +1,64 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+        width: 100%;
+        height: 200px; /* Adjust this if needed */
+        object-fit: contain;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+    .card button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+        .card button:hover {
+            background-color: #0056b3;
+        }
+
+footer {
+    text-align: center; 
+    background-color: #f8f9fa;
+    padding: 15px 0; 
+    font-size: 14px;
+    color: #333;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
