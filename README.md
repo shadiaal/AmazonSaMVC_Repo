@@ -40,25 +40,6 @@
 * Session management for keeping users logged in.
 * Styled with Bootstrap for improved UI design.
 
-#### Directory Structure:
-/AmazonSaMVC_Repo
-│
-├── Controllers
-│   ├── ProductController.cs
-│   └── OrderController.cs
-│
-├── Models
-│   ├── User.cs
-│   ├── Product.cs
-│   ├── Order.cs
-│   └── OrderDetails.cs
-│
-├── Views
-│   ├── Product/Index.cshtml     # Product List View
-│   ├── Order/Create.cshtml   # Order Form
-│   └── Order/History.cshtml     # Order History View
-│
-└── wwwroot/css/bootstrap.min.css # Bootstrap CSS
 
 #### Usage:
 * Product List: Navigate to /Products.
